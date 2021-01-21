@@ -1,0 +1,80 @@
+      <div class="main">
+        <p>Подово отопление</p>
+        <p class="desc">Доставка на материали и монтаж на подово</p>
+        <p class="desc">водно отопление на територията  на цялата страна.</p>
+        <a href="tel:0897840044" target = "_blank"><p class="phoneLink"><i class="fa fa-phone"></i> 089 784 0044</p></a>
+      </div>
+      <div class="formBG">
+        <div class="cmdtxt">
+          <p>Изберете квадратура от падащото меню и вижте оферта</p>
+        </div>
+        <div class="wrapper">
+          <div class="menu">
+              <select id="id">
+                  <option value="1" disabled hidden selected>Изберете опция</option>
+                  <option value="50">Оферта за 50 кв.м</option>
+                  <option value="55">Оферта за 55 кв.м</option>
+                  <option value="60">Оферта за 60 кв.м</option>
+                  <option value="65">Оферта за 65 кв.м</option>
+                  <option value="70">Оферта за 70 кв.м</option>
+                  <option value="75">Оферта за 75 кв.м</option>
+                  <option value="80">Оферта за 80 кв.м</option>
+                  <option value="85">Оферта за 85 кв.м</option>
+                  <option value="90">Оферта за 90 кв.м</option>
+                  <option value="95">Оферта за 95 кв.м</option>
+                  <option value="100">Оферта за 100 кв.м</option>
+                  <option value="110">Оферта за 110 кв.м</option>
+                </select>
+          </div>
+          <div class="content">
+              <div id="50" class="data">
+                  <p>цена: 3550 лв.</p>
+                  <button onclick="showHiddenOffer()">Виж подробности за офертата</button>
+              </div>
+              <div id="55" class="data">
+                <p>цена: 3870 лв.</p>
+                <button onclick="GoTo()">Виж подробности за офертата</button>
+              </div>
+              <div id="60" class="data">
+                <p>цена: 4100 лв.</p>
+                <button>Виж подробности за офертата</button>
+              </div>
+              <div id="65" class="data">
+                <p>цена: nqma лв.</p>
+                <button>Виж подробности за офертата</button>
+              </div>
+              <div id="70" class="data">
+                <p>цена: 4660 лв.</p>
+                <button>Виж подробности за офертата</button>
+              </div>
+              <div id="75" class="data">
+                <p>цена: 5100 лв.</p>
+                <button>Виж подробности за офертата</button>
+              </div>
+              <div id="80" class="data">
+                <p>цена: 5300 лв.</p>
+                <button>Виж подробности за офертата</button>
+              </div>
+              <div id="85" class="data">
+                <p>цена: 5730 лв.</p>
+                <button>Виж подробности за офертата</button>
+              </div>
+              <div id="90" class="data">
+                <p>цена: 5850 лв.</p>
+                <button>Виж подробности за офертата</button>
+              </div>
+              <div id="95" class="data">
+                <p>цена: 6160 лв.</p>
+                <button>Виж подробности за офертата</button>
+              </div>
+              <div id="100" class="data">
+                <p>цена: 6300 лв.</p>
+                <button>Виж подробности за офертата</button>
+              </div>
+              <div id="110" class="data">
+                <p>цена: 6920 лв.</p>
+                <button>Виж подробности за офертата</button>
+              </div>
+          </div>
+      </div>
+      </div>
