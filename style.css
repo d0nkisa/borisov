@@ -323,16 +323,6 @@ img {
 }
 /*#endregion contactForm*/
 
-#about .container {
-	min-height: 100vh;
-	width: 100%;
-	display: flex;
-	align-items: left;
-	justify-content: left;
-}
-#about .about {
-	background-color: #e92222;
-}
 #pros .container {
 	min-height: 100vh;
 	width: 100%;
@@ -343,10 +333,20 @@ img {
 #pros .pros {
 	background-color: #22e922;
 }
+/*#region about*/
+#about .container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#about .about {
+	background-color: #e92222;
+}
 #about .text-container {
-	width: 60%;
+	width: 90%;
 	height: 100vh;
-	margin-left: 46px;
 	background-color: #090909;
 }
 #about h1 {
@@ -374,11 +374,9 @@ img {
 		align-items: center;
 		justify-content: center;
 	}
-	#about .text-container {
-		width: 80%;
-		margin-left: auto;
-	}
 }
+/*#endregion about*/
+
 #galery .container {
 	min-height: 100vh;
 	width: 100%;
