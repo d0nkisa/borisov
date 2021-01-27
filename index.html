@@ -16,14 +16,14 @@
     <div class="header container">
       <div class="nav-bar">
         <div class="brand">
-          <a href="#hero"><img src="./img/logo-removebg.png" alt="error"></a>
+          <a href="#mview"><img src="./img/logo-removebg.png" alt="error"></a>
         </div>
         <div class="nav-list">
           <div class="hamburger"><div class="bar"></div></div>
           <ul>
-            <li><a href="#hero" data-after="Начало">Начало</a></li>
-            <li><a href="#gallery" data-after="Галерия">Галерия</a></li>
-            <li><a href="#about" data-after="За нас">За нас</a></li>
+            <li><a href="#mview" data-after="Начало">Начало</a></li>
+            <li><a href="#pros" data-after="Предимства">Предимства</a></li>
+            <li><a href="#galery" data-after="Галерия">Галерия</a></li>
             <li><a href="#contact" data-after="Контакти">Контакти</a></li>
           </ul>
         </div>
@@ -32,7 +32,7 @@
   </section>
   <!--#endregion End Header -->
   
-<!--#region MainView -->
+  <!--#region MainView -->
 <section id="mview">
   <div class="mview container">   
     <div class="row">
@@ -43,7 +43,7 @@
           <p>Ние предлагаме (информация за всички услуги които предлага фирмата).
           Кратка информация за фирмата и марките продукти с които работи</p>
         <div class="btnWithHover">
-          <a href="">Още за нас</a>
+          <a href="#about">Още за нас</a>
         </div>
         </div>
       </div>
@@ -54,7 +54,7 @@
           <p>Винаги може да се обърнете към нашите специалисти, които ще ви предоставят оферта възможно най-бързо. 
           Също така можете да проверите някой от нашите готови оферти.</p>
         <div class="btnWithHover">
-          <a href="">Виж оферти</a>
+          <a href="offers.html">Виж оферти</a>
         </div>
           <img src="/img/logo.jpg">
         </div>
@@ -71,7 +71,7 @@
             </div>
           </div> 
         <div class="btnWithHover">
-          <a href="">Направи запитване</a>
+          <a href="#contact">Направи запитване</a>
         </div>
         </div>
       </div>
@@ -80,6 +80,45 @@
   </div>
 </section>
 <!--#endregion MainView -->
+
+  <!--#region pros-->
+  <section id="pros">
+    <div class="pros container">
+      <h1>Предимства</h1>
+    </div>
+  </section>
+  <!--#endregion contactForm-->
+
+  <!--#region about-->
+  <section id="about">
+    <div class="about container">
+      <div class="text-container">
+        <h1>За <span>нас</span></h1>
+        <h2>Кои сме ние?
+          <p>Кратък текст с даващ разширена информация за фирмата, нейните дейности и други. текста трябва да заема
+          това пространство, за да изглежда естетически добре. Ще поискам вашето мнение относно това какво
+          ще напишем тук.</p>
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!--#endregion about-->
+
+  <!--#region galery-->
+  <section id="galery">
+    <div class="galery container">
+      <h1>Галерия</h1>
+    </div>
+  </section>
+  <!--#endregion galery-->
+
+  <!--#region contactForm-->
+  <section id="contact">
+    <div class="contactForm container">
+      <h1>Контакти</h1>
+    </div>
+  </section>
+  <!--#endregion contactForm-->
 
   <div class="icon-bar">
     <a href="https://www.facebook.com/Borisov0897840044" target = "_blank" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -90,6 +129,7 @@
   <!--#region scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
   <script src="functions.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <!--#endregion scripts -->
 
 </body>
