@@ -138,10 +138,9 @@ function loadAdminData() {
                                 newMail += '<div class="mailRow"> <h3>';
                                 newMail += Theme;
                                 newMail += '</h3> <button class="btn open" onclick="displayData(this)"> open </button> <button class="btn delete">delete</button>';
-                                newMail += '<p style="display:none">' + Firstname + '</p>';
-                                newMail += '<p style="display:none">' + Lastname + '</p>';
-                                newMail += '<p style="display:none">' + Email + '</p>';
-                                newMail += '<p style="display:none">' + Text + '</p> </div>';
+                                newMail += '<p style="display:none"> от: ' + Firstname + ' ' + Lastname + '</p>';
+                                newMail += '<p style="display:none"> имейл: ' + Email + '</p>';
+                                newMail += '<p style="display:none"> съобщение: ' + Text + '</p> </div>';
 
                                 document.getElementById('mails').innerHTML += newMail;
                             }

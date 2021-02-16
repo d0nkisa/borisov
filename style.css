@@ -338,7 +338,7 @@ img {
 	position: fixed;
 	background-color: #e92222;
 	border-radius: 30px;
-	padding: 80px;
+	padding: 60px;
 }
 .controlsInColumn h2{
 	font-weight: 500;
@@ -451,6 +451,11 @@ img {
 /*#endregion gallery*/
 
 /*#region inbox*/
+.mailRow button{
+	margin:0px 8px;
+	position: relative;
+	float: right;
+}
 .btn{
 	padding: 8px;
 	outline: none;
@@ -463,8 +468,6 @@ img {
 .open{
 	background-color: #22e95e;
 	color: #fff;
-	margin-left: 52vw;
-	margin-right: 15px;
 }
 .delete{
 	background-color: #e92222;
@@ -492,19 +495,34 @@ img {
 }
 .mails{
 	width: 70%;
-	margin-top: 200px;
+	margin-top: 250px;
 	margin-left: 15%;
 	margin-right: 15%;
 }
 .panel{
 	position: absolute;
 	display: none;
-	width: 70%;
+	margin-top: 100px;
+	width: 72%;
 	height: auto;
+	min-height: 650px;
 	border-radius: 60px;
 	top: 100;
-	left: 15%;
+	left: 14%;
 	background-color: rgb(119, 119, 119);
+}
+.panel p{
+	margin: 20px;
+	padding-left: 50px;
+}
+.panel h3{
+	text-align: center;
+	margin: 50px;
+}
+.panel button{
+	position: relative;
+	float: right;
+	margin: 30px 50px;
 }
 /*#endregion inbox*/
 

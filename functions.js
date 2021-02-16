@@ -17,8 +17,20 @@ menu_item.forEach((item) => {
 
 function displayData(element) {
 	var mailRow = element.parentNode;
+	var tema = mailRow.children[0].innerText;
 	var fname = mailRow.children[2].innerText;
+	var lname = mailRow.children[3].innerText;
+	var mail = mailRow.children[4].innerText;
+	var msg = mailRow.children[5].innerText;
 
 	document.getElementById('panel').style.display = "block";
-	document.getElementById('panel').children[0].innerHTML = fname;
+	document.getElementById('panel').children[1].innerHTML = tema;
+	document.getElementById('panel').children[2].innerHTML = fname;
+	document.getElementById('panel').children[2].innerHTML = lname;
+	document.getElementById('panel').children[3].innerHTML = mail;
+	document.getElementById('panel').children[4].innerHTML = msg;
+}
+
+function closeMsg() {
+	document.getElementById('panel').style.display = "none";
 }
