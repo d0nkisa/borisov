@@ -15,9 +15,10 @@ menu_item.forEach((item) => {
 	});
 });
 
-$(document).ready(function(){
-	$("#id").on('change',function(){
-		$(".data").hide();
-		$("#" + $(this).val()).fadeIn(700);
-	}).change() ;
-});
+function displayData(element) {
+	var mailRow = element.parentNode;
+	var fname = mailRow.children[2].innerText;
+
+	document.getElementById('panel').style.display = "block";
+	document.getElementById('panel').children[0].innerHTML = fname;
+}

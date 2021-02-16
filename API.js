@@ -9,41 +9,54 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-var firebase = firebase.firestore();
-
-const docRef = firestore.doc("sample/mailOne");
+var firestore = firebase.firestore();
+const Auth = firebase.auth();
+const cloudData = firebase.firestore();
 const inputFname = document.querySelector("#fname");
 const inputLname = document.querySelector("#lname");
 const inputMail = document.querySelector("#email");
 const inputText = document.querySelector("#subject");
-const submitBtn = document.querySelector("#sendBtn");
+const inputTheme = document.querySelector("#tema");
+const sendBtn = document.querySelector("#sendBtn");
 
-submitBtn.addEventListener("click", function () {
+sendBtn.addEventListener('click', function () {
     const firstname = inputFname.value;
     const lastname = inputLname.value;
     const email = inputMail.value;
+    const tema = inputMail.value;
     const message = inputText.value;
-    console.log("I am going to save " + firstname + lastname + email + message + "to Firestore.");
-    docRef.set({
-        firstName: firstname,
-        lastName: lastname,
-        email: email,
-        textMsg: message,
-    }).then(function () {
-        console.log("File saved");
-    }).catch(function (error) {
-        console.log("Got an error: ", error);
+    console.log("I am going to save " + firstname + " " + lastname + " " + email + " " + tema + " " + message + " " + "to Firestore.");
+    cloudData.doc("size/data").get().then(function (doc) {
+        var Size;
+        if (doc && doc.exists) {
+            const data = doc.data();
+            Size = data.size;
+            cloudData.doc("mail" + (Size + 1) + "/data").set({
+                firstname: firstname,
+                lastname: lastname,
+                email: email,
+                theme: tema,
+                text: message,
+            }).then(function () {
+                console.log("File saved");
+            }).catch(function (error) {
+                console.log("Got an error: ", error);
+            });
+
+            cloudData.doc("size/data").update({
+                size: parseInt(parseInt(Size) + 1)
+            }).catch(function (error) {
+                console.log("Got an error: ", error);
+            });
+        }
     })
 })
-
-const Auth = firebase.auth();
-const cloudData = firebase.firestore();
 
 function signIn() {
     var Email = document.getElementById("signInEmailInputFieldText");
     var Password = document.getElementById("signInPasswordInputFieldText");
 
-    Auth.signInWithEmailAndPassword(Email.value, Password.value).then(function () {
+    firebase.auth().signInWithEmailAndPassword(Email.value, Password.value).then(function () {
         location.replace("adminPage.html")
     }).catch(function (error) {
         if (error) {
@@ -83,8 +96,10 @@ function signIn() {
 }
 
 function signOut() {
-    firebase.auth().signOut().then(function () {
+    firebase.auth().signOut().then(() => {
         location.replace("index.html")
+    }).catch((error) => {
+        // An error happened.
     });
 }
 
@@ -102,7 +117,38 @@ function errorDisplay(error, have) {
 function loadAdminData() {
     Auth.onAuthStateChanged(function (user) {
         if (user) {
+            cloudData.doc("size/data").get().then(function (doc) {
+                var Size;
+                if (doc && doc.exists) {
+                    const data = doc.data();
+                    Size = data.size;
 
+                    for (let index = 1; index < Size + 1; index++) {
+                        cloudData.doc("mail" + index + "/data").get().then(function (doc) {
+                            var Firstname, Lastname, Theme, Email, Text;
+                            if (doc && doc.exists) {
+                                const mailData = doc.data();
+                                Firstname = mailData.firstname;
+                                Lastname = mailData.lastname;
+                                Theme = mailData.theme;
+                                Email = mailData.email;
+                                Text = mailData.text;
+
+                                var newMail = "";
+                                newMail += '<div class="mailRow"> <h3>';
+                                newMail += Theme;
+                                newMail += '</h3> <button class="btn open" onclick="displayData(this)"> open </button> <button class="btn delete">delete</button>';
+                                newMail += '<p style="display:none">' + Firstname + '</p>';
+                                newMail += '<p style="display:none">' + Lastname + '</p>';
+                                newMail += '<p style="display:none">' + Email + '</p>';
+                                newMail += '<p style="display:none">' + Text + '</p> </div>';
+
+                                document.getElementById('mails').innerHTML += newMail;
+                            }
+                        });
+                    }
+                }
+            });
         }
         else {
             location.replace("index.html")

@@ -12,44 +12,48 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <title>Admin Page</title>
+    <title>Contact us</title>
 </head>
 
-<body onload="loadAdminData()">
+<body>
 
     <!--#region Header -->
     <section id="header">
         <div class="header container">
             <div class="nav-bar">
                 <div class="brand">
-                    <a href="#mview"><img src="./img/logo-removebg.png" alt="error"></a>
+                    <a href="index.html"><img src="./img/logo-removebg.png" alt="error"></a>
                 </div>
                 <div class="nav-list">
-                    <div class="hamburger" id="hambuger">
+                    <div class="hamburger">
                         <div class="bar"></div>
                     </div>
                     <ul>
-                        <li><a href="#mview" data-after="Начало">Начало</a></li>
+                        <li><a href="index.html" data-after="Начало">Начало</a></li>
                         <li><a href="pros.html" data-after="Предимства">Предимства</a></li>
                         <li><a href="gallery.html" data-after="Галерия">Галерия</a></li>
                         <li><a href="contact.html" data-after="Контакти">Контакти</a></li>
-                        <li><a href="#" data-after="Кутия">Кутия</a></li>
-                        <button class="scalingBtn" onclick="signOut()" id="logOutBtn">Изход</button>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
     <!--#endregion End Header -->
-    <div class="mails" id="mails"></div>
 
-    <div class="panel" id="panel">
-        <h1></h1>
-        <p></p>
-        <p></p>
-        <p></p>
+    <!--#region contactForm-->
+    <section id="contact">
+        <div class="contact container">
+            <h1>КОНТАКТИ</h1>
+            <input class="inputBox" type="text" id="fname" placeholder="Your name..">
+            <input class="inputBox" type="text" id="lname" placeholder="Your last name..">
+            <input class="inputBox" type="text" id="email" placeholder="Your e-mail address...">
+            <input class="inputBox" type="text" id="tema" placeholder="Theme...">
+            <textarea class="msgBox" id="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-    </div>
+            <button id="sendBtn" class="scalingBtn">Send</button>
+        </div>
+    </section>
+    <!--#endregion contactForm-->
 
     <script src="functions.js"></script>
     <script src="API.js"></script>
