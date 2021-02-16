@@ -364,6 +364,7 @@ img {
 .scalingBtn{
 	border-radius: 30px;
 	border: none;
+	outline: none;
 	padding: 6px 25px;
 	margin-top: 20px;
 	color: #090909;
@@ -425,37 +426,96 @@ img {
 /*#endregion about*/
 
 /*#region pros*/
-#pros .container {
-	min-height: 100vh;
-	width: 100%;
-	display: flex;
+#pros{
+	background-color: #e92222c0;
 	align-items: center;
 	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	padding: 100px;
 }
-#pros .pros {
-	background-color: #e92222c0;
+.pbox{
+	position: relative;
+	width: 800px;
+	padding: 20px;
+	margin: 20px 0px; 
+	box-sizing: border-box;
+	background: #d3d3d3;
+	color: #090909;
+	border-radius: 10px;
+	display: flex;
+}
+.pbox .imgBox{
+	width: 200px;
+	height: 200px;
+	flex: 0 0 200px;
+}
+.pbox .imgBox img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.pbox .pcontent{
+	padding-left: 20px;
 }
 /*#endregion pros*/
 
 /*#region gallery*/
-#galery .container {
-	min-height: 100vh;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-#galery .galery {
+#galery {
 	background-color: #090909;
+}
+#slider {
+	overflow: hidden;
+}
+#slider figure{
+	position: relative;
+	width: 1000%;
+	margin: 0;
+	left: 0;
+	animation: 30s slider infinite;	
+}
+#slider figure img{
+	width: 10%;
+	float: left;
+}
+@keyframes slider {
+	0%{
+		left: 0;
+	}
+	10%{
+		left: 0;
+	}
+	20%{
+		left: -100%;
+	}
+	30%{
+		left: -200%;
+	}
+	40%{
+		left: -300%;
+	}
+	50%{
+		left: -400%;
+	}
+	60%{
+		left: -500%;
+	}
+	70%{
+		left: -600%;
+	}
+	80%{
+		left: -700%;
+	}
+	90%{
+		left: -800%;
+	}
+	100%{
+		left: -900%;
+	}
 }
 /*#endregion gallery*/
 
 /*#region inbox*/
-.mailRow button{
-	margin:0px 8px;
-	position: relative;
-	float: right;
-}
 .btn{
 	padding: 8px;
 	outline: none;
@@ -468,8 +528,9 @@ img {
 .open{
 	background-color: #22e95e;
 	color: #fff;
+	margin-left: auto;
 }
-.delete{
+.close{
 	background-color: #e92222;
 	color: #fff;
 }
@@ -477,7 +538,7 @@ img {
 	background-color: #1ca545;
 	cursor: pointer;
 }
-.delete:hover{
+.close:hover{
 	background-color: #b11e1e;
 	cursor: pointer;
 }
@@ -490,7 +551,7 @@ img {
 	margin: 20px;
 }
 .mailRow h3{
-	text-align: left;
+	float: left;
 	padding-left: 50px;
 }
 .mails{
@@ -498,6 +559,13 @@ img {
 	margin-top: 250px;
 	margin-left: 15%;
 	margin-right: 15%;
+}
+@media only screen and (min-width: 768px) {
+	.panel{
+		width: 100%;
+		left: 0%;
+		min-height: 350px;
+	}
 }
 .panel{
 	position: absolute;
@@ -510,6 +578,7 @@ img {
 	top: 100;
 	left: 14%;
 	background-color: rgb(119, 119, 119);
+	flex-direction:column-reverse;
 }
 .panel p{
 	margin: 20px;

@@ -39,14 +39,17 @@ sendBtn.addEventListener('click', function () {
                 text: message,
             }).then(function () {
                 console.log("File saved");
+                window.alert("Съобщението е изпратено");
             }).catch(function (error) {
                 console.log("Got an error: ", error);
+                window.alert("Възникна грешка: ", error);
             });
 
             cloudData.doc("size/data").update({
                 size: parseInt(parseInt(Size) + 1)
             }).catch(function (error) {
                 console.log("Got an error: ", error);
+                window.alert("Възникна грешка: ", error);
             });
         }
     })
@@ -117,6 +120,7 @@ function errorDisplay(error, have) {
 function loadAdminData() {
     Auth.onAuthStateChanged(function (user) {
         if (user) {
+            window.alert("Успешно влязохте в акунта си!");
             cloudData.doc("size/data").get().then(function (doc) {
                 var Size;
                 if (doc && doc.exists) {
@@ -137,7 +141,7 @@ function loadAdminData() {
                                 var newMail = "";
                                 newMail += '<div class="mailRow"> <h3>';
                                 newMail += Theme;
-                                newMail += '</h3> <button class="btn open" onclick="displayData(this)"> open </button> <button class="btn delete">delete</button>';
+                                newMail += '</h3> <button class="btn open" onclick="displayData(this)"> open </button>';
                                 newMail += '<p style="display:none"> от: ' + Firstname + ' ' + Lastname + '</p>';
                                 newMail += '<p style="display:none"> имейл: ' + Email + '</p>';
                                 newMail += '<p style="display:none"> съобщение: ' + Text + '</p> </div>';
@@ -151,6 +155,7 @@ function loadAdminData() {
         }
         else {
             location.replace("index.html")
+            window.alert("Възникна грешка: ", error);
         }
     });
 }

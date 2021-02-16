@@ -18,10 +18,10 @@ menu_item.forEach((item) => {
 function displayData(element) {
 	var mailRow = element.parentNode;
 	var tema = mailRow.children[0].innerText;
-	var fname = mailRow.children[2].innerText;
-	var lname = mailRow.children[3].innerText;
-	var mail = mailRow.children[4].innerText;
-	var msg = mailRow.children[5].innerText;
+	var fname = mailRow.children[1].innerText;
+	var lname = mailRow.children[2].innerText;
+	var mail = mailRow.children[3].innerText;
+	var msg = mailRow.children[4].innerText;
 
 	document.getElementById('panel').style.display = "block";
 	document.getElementById('panel').children[1].innerHTML = tema;
