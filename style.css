@@ -312,12 +312,19 @@ img {
 
 /*#region contactForm*/
 #contact .container {
-	min-height: 100vh;
-	width: 100%;
+	margin-top: 60px;
+	min-height: 75vh;
+	width: 30%;
+	border-radius: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	background-color: #e92222;
 }
 .inputs {
 	flex-direction: column;
@@ -464,7 +471,11 @@ img {
 #galery {
 	background-color: #090909;
 }
+.galleryContainer{
+	margin: 125px 20px 0px 20px;
+}
 #slider {
+	height: 86vh;
 	overflow: hidden;
 }
 #slider figure{
