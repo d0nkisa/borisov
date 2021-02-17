@@ -526,6 +526,74 @@ img {
 }
 /*#endregion gallery*/
 
+/*#region offers*/
+.wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-wrap: wrap;
+	padding: 70px 0;
+	max-width: 900px;
+	margin: 60 auto;
+}
+.menu, .content{
+	width: 100%;
+}
+select{
+	width: 50%;
+	padding: 15px;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+	border: none;
+	border-radius: 8px;
+	box-shadow: 0 5px 25px rgb(0, 0, 0, .8);
+	appearance: none;
+}
+.content{
+	margin: 30px 30px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.content .data{
+	padding: 25px;
+	background-color: #b4b4b4;
+	border: 2px solid #e92222;
+	border-radius: 8px;
+	color: #090909;
+}
+.data {
+	display: none;
+}
+.obox{
+	position: relative;
+	width: auto;
+	padding: 20px;
+	margin: 20px 0px; 
+	box-sizing: border-box;
+	background: #d3d3d3;
+	color: #090909;
+	border-radius: 10px;
+	display: flex;
+}
+.obox .imgBox{
+	width: 100px;
+	height: 100px;
+	flex: 0 0 100px;
+}
+.obox .imgBox img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.obox .ocontent{
+	margin: 8px;
+	padding-left: 10px 0 0;
+	text-align: left;
+}
+/*#endregion offers*/
+
 /*#region inbox*/
 .btn{
 	padding: 8px;

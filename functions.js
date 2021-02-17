@@ -15,6 +15,13 @@ menu_item.forEach((item) => {
 	});
 });
 
+$(document).ready(function () {
+	$("#id").on('change', function () {
+		$(".data").hide();
+		$("#" + $(this).val()).fadeIn(700);
+	}).change();
+});
+
 function displayData(element) {
 	var mailRow = element.parentNode;
 	var tema = mailRow.children[0].innerText;

@@ -1,0 +1,1683 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Contact us</title>
+</head>
+
+<body>
+
+    <!--#region Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="index.html"><img src="./img/logo-removebg.png" alt="error"></a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="index.html" data-after="Начало">Начало</a></li>
+                        <li><a href="pros.html" data-after="Предимства">Предимства</a></li>
+                        <li><a href="gallery.html" data-after="Галерия">Галерия</a></li>
+                        <li><a href="contact.html" data-after="Контакти">Контакти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--#endregion End Header -->
+
+    <!--#region offers-->
+    <section id="offers">
+        <div class="wrapper">
+            <div class="menu">
+                <select id="id">
+                    <option value="1" disabled hidden selected>Изберете опция</option>
+                    <option value="50">Оферта за 50 кв.м</option>
+                    <option value="55">Оферта за 55 кв.м</option>
+                    <option value="60">Оферта за 60 кв.м</option>
+                    <option value="65">Оферта за 65 кв.м</option>
+                    <option value="70">Оферта за 70 кв.м</option>
+                    <option value="75">Оферта за 75 кв.м</option>
+                    <option value="80">Оферта за 80 кв.м</option>
+                    <option value="85">Оферта за 85 кв.м</option>
+                    <option value="90">Оферта за 90 кв.м</option>
+                    <option value="95">Оферта за 95 кв.м</option>
+                    <option value="100">Оферта за 100 кв.м</option>
+                    <option value="110">Оферта за 110 кв.м</option>
+                </select>
+            </div>
+
+            <div class="content">
+                <div id="50" class="data">
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторна-кутия.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колектор-с-дебитомери.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/електрическа-задвижка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/клапан.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторен-накрайник.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кран.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кранче.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/термостат.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/адаптори.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/крепежни-елементи.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/коляно.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/изолационна-настилка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/лента.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръби-ф32.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръба-за-подово.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/труд.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <p>общо: 3300лв.</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div id="55" class="data">
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторна-кутия.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колектор-с-дебитомери.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/електрическа-задвижка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/клапан.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторен-накрайник.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кран.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кранче.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/термостат.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/адаптори.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/крепежни-елементи.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/коляно.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/изолационна-настилка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/лента.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръби-ф32.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръба-за-подово.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/труд.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <p>общо: 3400лв.</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div id="60" class="data">
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторна-кутия.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колектор-с-дебитомери.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/електрическа-задвижка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/клапан.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторен-накрайник.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кран.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кранче.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/термостат.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/адаптори.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/крепежни-елементи.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/коляно.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/изолационна-настилка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/лента.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръби-ф32.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръба-за-подово.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/труд.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <p>общо: 3500лв.</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div id="65" class="data">
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторна-кутия.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колектор-с-дебитомери.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/електрическа-задвижка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/клапан.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторен-накрайник.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кран.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кранче.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/термостат.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/адаптори.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/крепежни-елементи.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/коляно.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/изолационна-настилка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/лента.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръби-ф32.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръба-за-подово.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/труд.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <p>общо: 3600лв.</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div id="70" class="data">
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторна-кутия.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колектор-с-дебитомери.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/електрическа-задвижка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/клапан.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторен-накрайник.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кран.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кранче.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/термостат.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/адаптори.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/крепежни-елементи.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/коляно.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/изолационна-настилка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/лента.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръби-ф32.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръба-за-подово.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/труд.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <p>общо: 3700лв.</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div id="75" class="data">
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторна-кутия.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колектор-с-дебитомери.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/електрическа-задвижка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/клапан.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторен-накрайник.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кран.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кранче.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/термостат.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/адаптори.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/крепежни-елементи.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/коляно.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/изолационна-настилка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/лента.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръби-ф32.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръба-за-подово.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/труд.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <p>общо: 3800лв.</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div id="80" class="data">
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторна-кутия.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колектор-с-дебитомери.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/електрическа-задвижка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/клапан.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторен-накрайник.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кран.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кранче.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/термостат.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/адаптори.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/крепежни-елементи.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/коляно.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/изолационна-настилка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/лента.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръби-ф32.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръба-за-подово.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/труд.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <p>общо: 3900лв.</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div id="85" class="data">
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторна-кутия.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колектор-с-дебитомери.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/електрическа-задвижка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/клапан.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторен-накрайник.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кран.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кранче.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/термостат.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/адаптори.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/крепежни-елементи.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/коляно.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/изолационна-настилка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/лента.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръби-ф32.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръба-за-подово.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/труд.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <p>общо: 4000лв.</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div id="90" class="data">
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторна-кутия.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колектор-с-дебитомери.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/електрическа-задвижка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/клапан.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторен-накрайник.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кран.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кранче.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/термостат.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/адаптори.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/крепежни-елементи.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/коляно.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/изолационна-настилка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/лента.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръби-ф32.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръба-за-подово.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/труд.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <p>общо: 4100лв.</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div id="95" class="data">
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторна-кутия.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колектор-с-дебитомери.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/електрическа-задвижка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/клапан.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторен-накрайник.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кран.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кранче.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/термостат.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/адаптори.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/крепежни-елементи.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/коляно.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/изолационна-настилка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/лента.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръби-ф32.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръба-за-подово.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/труд.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <p>общо: 4200лв.</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div id="100" class="data">
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторна-кутия.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колектор-с-дебитомери.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/електрическа-задвижка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/клапан.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторен-накрайник.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кран.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кранче.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/термостат.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/адаптори.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/крепежни-елементи.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/коляно.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/изолационна-настилка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/лента.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръби-ф32.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръба-за-подово.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/труд.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <p>общо: 4300лв.</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div id="110" class="data">
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторна-кутия.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колектор-с-дебитомери.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/електрическа-задвижка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/клапан.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/колекторен-накрайник.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кран.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/кранче.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/термостат.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/адаптори.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/крепежни-елементи.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/коляно.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/изолационна-настилка.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/лента.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръби-ф32.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/тръба-за-подово.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <div class="obox">
+                        <div class="imgBox">
+                            <img src="img/труд.jpg" alt="">
+                        </div>
+                        <div class="ocontent">
+                            <p>1 X 249лв. = 249лв.</p>
+                        </div>
+                    </div>
+                    <p>общо: 4400лв.</p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!--#endregion offers-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="functions.js"></script>
+    <script src="API.js"></script>
+
+</body>
+
+</html>
