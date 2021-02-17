@@ -386,6 +386,14 @@ img {
 	padding: 6px 75px;
 	cursor: pointer;
 }
+@media only screen and (max-width: 950px) {
+	#contact .container {
+		margin-top: 60px;
+		min-height: 75vh;
+		width: 100%;
+		border-radius: 0;
+	}
+}
 /*#endregion contactForm*/
 
 /*#region about*/
@@ -444,7 +452,7 @@ img {
 }
 .pbox{
 	position: relative;
-	width: 800px;
+	width: auto;
 	padding: 20px;
 	margin: 20px 0px; 
 	box-sizing: border-box;
@@ -464,6 +472,11 @@ img {
 }
 .pbox .pcontent{
 	padding-left: 20px;
+}
+@media only screen and (max-width: 500px) {
+	.pbox{
+		flex-direction: column;
+	}
 }
 /*#endregion pros*/
 
