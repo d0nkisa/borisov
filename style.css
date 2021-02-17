@@ -324,7 +324,6 @@ img {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background-color: #e92222;
 }
 .inputs {
 	flex-direction: column;
